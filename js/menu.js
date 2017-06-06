@@ -2,7 +2,7 @@ var stateMenu = {
     
     preload: function (){
         
-        game.load.image('logo', 'phaser.png');
+        game.load.image('logo', 'assets/phaser.png');
         game.load.spritesheet('button', 'assets/buttons/button_sprite_sheet.png', 193, 71);
     },
     
