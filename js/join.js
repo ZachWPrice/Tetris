@@ -7,11 +7,12 @@ var stateJoin = {
         
     },
     
-    
     update: function (){
         //if all connected: 
+    },
+    
+    startGame: function (){
         game.state.start('play');
-        
     }
     
 }
