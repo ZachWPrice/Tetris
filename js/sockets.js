@@ -1,6 +1,6 @@
 //var io = require('socket.io');
 
-window.onload = function() {
+//window.onload = function() {
 var url = "ws://tetris-heed.rhcloud.com:8000/";
 var _clientName = 'Zachary';
 var socket = io(url, {
@@ -34,12 +34,27 @@ socket.on('penaltyLine', function() {
 	console.log("penaltyLine");
 });
 
-/*socket.emit('createRoom', args);
-socket.emit('joinRoom', args);
-socket.emit('leaveRoom', args);
-socket.emit('lostGame', args);
-socket.emit('penaltyLine', args);
-socket.emit('gameStart', args);*/
-};
+
+function createRoom(){
+	socket.emit('createRoom', []);
+}
+  
+function joinRoom(){
+	socket.emit('joinRoom', args);
+}
+
+function leaveRoom(){
+	socket.emit('leaveRoom', args);
+}
+
+function lostGame(){
+	socket.emit('lostGame', args);
+}
+function penaltyLine(){
+	socket.emit('penaltyLine', args);
+}
+function gameStart(){
+	socket.emit('gameStart', args);
+}
 
 

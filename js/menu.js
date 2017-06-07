@@ -11,10 +11,12 @@ var stateMenu = {
         logo.anchor.setTo(0.5, 0.5);
 
         var btnConnect = game.add.button(game.world.centerX - 95, 500, 'button', () => {
-            Math.seedrandom('hello.');
-            console.log(Math.random());
+     //       Math.seedrandom('hello.');
+      //      console.log(Math.random());
+            createRoom();
             game.state.start('join'); 
         }, this, 2, 1, 0);
     }
 }
+
 
