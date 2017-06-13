@@ -16,10 +16,10 @@ socket.on('joinedRoom', function() {
 });
 socket.on('gameStart', function() {
 	console.log("gameStart");
-	//stateJoin.startGame
 });
 socket.on('playerJoinedRoom', function() {
 	console.log("playerJoinedRoom");
+	//TODO add player, update joined room pages
 });
 socket.on('playerLeftRoom', function() {
 	console.log("playerLeftRoom");
@@ -36,11 +36,11 @@ socket.on('penaltyLine', function() {
 
 
 function createRoom(){
-	socket.emit('createRoom', []);
+	socket.emit('createRoom', 'zachRoom');
 }
   
 function joinRoom(){
-	socket.emit('joinRoom', args);
+	socket.emit('joinRoom', 'zachRoom');
 }
 
 function leaveRoom(){
